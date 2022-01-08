@@ -11,12 +11,13 @@ G_DEFINE_TYPE(FlashdAppWindow, flashd_app_window, GTK_TYPE_APPLICATION_WINDOW);
 
 static void flashd_app_window_init(FlashdAppWindow* win)
 {
-	// Nothing yet..
+	gtk_widget_init_template(GTK_WIDGET(win));
 }
 
 static void flashd_app_window_class_init(FlashdAppWindowClass* class)
 {
-	// Nothing yet..
+	gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
+			"/org/chrinkus/flashdapp/window.ui");
 }
 
 FlashdAppWindow* flashd_app_window_new(FlashdApp* app)
