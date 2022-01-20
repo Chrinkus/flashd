@@ -3,7 +3,7 @@ find_program(GLIB_COMPILE_RESOURCES NAMES glib-compile-resources REQUIRED)
 
 set(GRESOURCE_OUT resources.c)
 set(GRESOURCE_DIR resources)
-set(GRESOURCE_XML flashdapp.gresource.xml)
+set(GRESOURCE_XML ndexapp.gresource.xml)
 
 add_custom_command(
 	OUTPUT			${GRESOURCE_OUT}
@@ -20,12 +20,12 @@ add_custom_command(
 )
 
 # Application target
-add_executable(flashd
+add_executable(ndex
 	main.c
-	flashd_app.c
-	flashd_app_win.c
+	ndex_app.c
+	ndex_app_win.c
 	${CMAKE_CURRENT_BINARY_DIR}/${GRESOURCE_OUT}
 )
 
-target_link_libraries(flashd PUBLIC ${GTK_LIBRARIES})
+target_link_libraries(ndex PUBLIC ${GTK_LIBRARIES})
 

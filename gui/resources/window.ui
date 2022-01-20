@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-	<template class="FlashdAppWindow" parent="GtkApplicationWindow">
-		<property name="title" translatable="yes">Flashd</property>
+	<template class="NdexAppWindow" parent="GtkApplicationWindow">
+		<property name="title" translatable="yes">Ndex</property>
 		<property name="default-width">600</property>
 		<property name="default-height">400</property>
 	</template>

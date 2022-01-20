@@ -1,2 +1,4 @@
-# flashd
-A flash card application
+# ndex
+
+A virtual index card application for the diligent learner.
+
